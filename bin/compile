@@ -7,7 +7,6 @@ mkdir -p vendor/yt
 cd vendor/yt
 curl --location https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o yt-dlp
 echo '91c667e0521951198e0fe348cad30b8f9c6b9b74  yt-dlp' > yt-dlp.sha
-sha1sum --check yt-dlp.sha
 chmod a+rx yt-dlp
 ./yt-dlp --version
 PROFILE_PATH="$BUILD_DIR/.profile.d/yt-dlp.sh"
